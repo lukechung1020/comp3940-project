@@ -1,0 +1,132 @@
+:root {
+    --background-color: #ced6fd;
+    --text-color: #222222;
+    --shadow-color: #c9c9c9;
+    --button-color: #7091e6;
+    --button-hover-color: #3d52a0;
+    --button-text-color: #ffffff;
+    --form-background-color: var(--button-text-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--background-color); /* Background color outside the form */
+    color: var(--text-color);
+}
+
+h1 {
+    text-shadow: var(--shadow-color) 1px 1px 1px;
+    text-align: center;
+    margin: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem;
+}
+
+
+p {
+    text-align: center;
+}
+
+#generate-image-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 20px;
+    background-color: var(--form-background-color);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--shadow-color);
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--shadow-color);
+    border-radius: 5px;
+}
+
+img, video {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.button-common {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.button-common:hover {
+    background-color: var(--button-hover-color);
+}
+
+.red-button {
+    background-color: #e63946;
+}
+
+.red-button:hover {
+    background-color: #d62828;
+}
+
+.green-button {
+    background-color: #28a745;
+}
+
+.green-button:hover {
+    background-color: #218838;
+}
+
+.quiz-box {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
